@@ -55,6 +55,7 @@ jobs:
           git checkout prod-stable && git pull origin main 
           ls -a
           git add -A
+          git push
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
