@@ -52,6 +52,7 @@ jobs:
       - name: List Files After Checkout
         run: |
           pwd
+          git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
           git config --global user.email "suraj@v-comply.com"
           git config --global user.name "suraj4VComply"
           git checkout prod-stable && git pull origin main 
