@@ -52,7 +52,7 @@ jobs:
       - name: List Files After Checkout
         run: |
           pwd
-          git checkout -b prod-stable
+          git checkout -b prod-stable && git pull origin main && git push
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
