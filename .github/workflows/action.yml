@@ -1,5 +1,6 @@
 name: Github Automatic Code Backup
 on:
+  push:
   pull_request:
     types: [opened]
 jobs:
